@@ -18,16 +18,3 @@ Biến đổi danh sách đó thành mảng chuỗi hiển thị theo mẫu:"[T�
 
 In mảng kết quả cuối cùng ra màn hình.
 */
-
-const items = [
-  { name: "Mushroom", price: 100, inStock: true },
-  { name: "Star", price: 1500, inStock: false },
-  { name: "Fire Flower", price: 350, inStock: true },
-  { name: "1-Up Mushroom", price: 2000, inStock: true },
-  { name: "Shell", price: 80, inStock: false }
-];
-
-let itemsFilter = items.filter(item => item.inStock === true)
-// console.log(`${items.name} - ${items.price.toLocaleString("en-US")} coins`)
-let newItems = itemsFilter.map(item => (`${item.name} - ${item.price.toLocaleString("en-US")} coins`))
-    console.log(newItems)
