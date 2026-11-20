@@ -14,3 +14,17 @@ In mỗi cặp hợp lệ theo mẫu: (a, b) = tong (ví dụ (1, 12) = 13).
 
 Cuối cùng in ra tổng số cặp đếm được (chỉ in một lần sau khi kết thúc vòng lặp).
 */
+
+function countPairsDivisibleBy13() {
+    let count = 0;
+    for (i = 1; i <= 60; i++) {
+        for (j = i + 1; j <= 60; j++) {
+            if ((i + j) % 13 === 0) {
+                count++;
+                console.log(`(${i}, ${j}) = ${i + j}`);
+            }
+        }
+    }
+    console.log(`Tổng số cặp chia hết cho 13 là: ${count}`);
+}
+countPairsDivisibleBy13()

@@ -8,3 +8,15 @@ Chỉ lấy ra danh sách tên của những người đó (dạng mảng chuỗ
 
 Thử tự kiểm tra xem nếu đổi thứ tự giữa filter và map thì kết quả có thay đổi không.
 */
+
+const racers = [
+    { name: "Toad", points: 750 },
+    { name: "Bowser", points: 1200 },
+    { name: "Daisy", points: 950 },
+    { name: "Wario", points: 600 },
+    { name: "Rosalina", points: 1200 }
+];
+let racersFilter = racers.filter(racer => racer.points >= 950);
+let racersSorted = racersFilter.sort ((a,b) => b.points - a.points);
+let racersMap = racersSorted.map (racer => racer.name);
+console.log(racersMap);
