@@ -19,4 +19,4 @@ const racers = [
 let racersFilter = racers.filter(racer => racer.points >= 950);
 let racersSorted = racersFilter.sort ((a,b) => b.points - a.points);
 let racersMap = racersSorted.map (racer => racer.name);
-console.log(racersMap);
+console.log(racersMap)
